@@ -24,7 +24,7 @@ options:
     string_encoding: EUC-JP
     rodata_string_guesser_level: 2 # improve string detection
     disasm_unknown: True
-    named_regs_for_c_funcs: False
+    named_regs_for_c_funcs: True
     # subalign: 4
     include_macro_inc: no # don't write macro.inc to rodata files
     

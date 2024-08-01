@@ -16,7 +16,17 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/object", ObjectCreate);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/object", ObjectCreateA);
 
-INCLUDE_ASM("asm/nonmatchings/ggxeuc/object", ObjectCreate_ActNo);
+CHARACTER_WORK* ObjectCreate_ActNo(CHARACTER_WORK* poffset, u16 idno, CREATE_ARG* arg, u16 actno) {
+    CREATE_ARG newArg;
+
+    if (arg == NULL) {
+        newArg.flag = 0;
+        arg = &newArg;
+    }
+    arg->actno = actno & 0xFFFF;
+    arg->flag |= 4;
+    return ObjectCreateA(poffset, idno & 0xFFFF, arg);
+}
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/object", object_killall);
 

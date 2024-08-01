@@ -2,7 +2,16 @@
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", af_ASTFLAGCONTROL);
 
-INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", af_BACK_MOTION);
+void af_BACK_MOTION(CHARACTER_WORK* offset, TACTNORMAL* ip) {
+    u32 temp_t2 = (offset->attackst | 0x800) & 0xFFFFBFFF;
+    offset->actst |= 0x40;
+    offset->GuardSt &= 0xFBFF;
+    offset->ActHeader.flag &= 0xFFFFDFFF;
+    offset->attackst = (offset->attackst | 0x800) & 0xFFFFBFFF;
+    if (ip->arg1 == 0) {
+        offset->attackst = ((offset->attackst & 0xFFFFFFEF) | 0x400) & 0xFFFFFFDF;
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", af_RENEWAL_COLLISION);
 
