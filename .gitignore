@@ -14,7 +14,7 @@ undefined_funcs_auto.txt
 .cache
 build.ninja
 progress/
-orig/
+iso/
 SLPM_645.25*
 
 compile_commands.json

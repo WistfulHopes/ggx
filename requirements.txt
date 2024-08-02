@@ -1,0 +1,13 @@
+argcomplete==3.4.0
+colorama==0.4.6
+cxxfilt==0.3.0
+docker_py==1.10.6
+mapfile_parser==2.4.0
+ninja_syntax==1.7.2
+PyNaCl==1.5.0
+python_Levenshtein==0.25.1
+rabbitizer==1.12.0
+spimdisasm==1.27.0
+splat==0.32
+toml==0.10.2
+watchdog==4.0.1

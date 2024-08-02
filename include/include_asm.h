@@ -29,7 +29,7 @@ __asm__(".include \"include/macro.inc\"\n");
 #else
 
 #ifndef INCLUDE_ASM
-#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)
+#define INCLUDE_ASM(FOLDER, NAME)
 #endif
 #ifndef INCLUDE_RODATA
 #define INCLUDE_RODATA(TYPE, FOLDER, NAME, ARGS...)

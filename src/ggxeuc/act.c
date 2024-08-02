@@ -182,7 +182,54 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", ExePosByEnemy);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", NextInstExecute);
 
-INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", SetAnimeNo);
+void SetAnimeNo(CHARACTER_WORK* offset, int no) {
+    DAMAGEPARAM* hitParam;
+
+    offset->AnimeNo = no;
+    if (offset->InstTb != NULL) {
+        TACTHEADER* actInst = (TACTHEADER*)offset->InstTb[no];
+        offset->ActHeaderp = actInst;
+        offset->ActHeader.flag = actInst->flag;
+        *(s32*)&offset->ActHeader.lvflag = *(s32*)&actInst->lvflag; // sets the last 4 bytes of ActHeader in one instruction
+        SetDamage(offset, (u16) offset->ActHeader.damage);
+        hitParam = offset->HitParam;
+        offset->SpriteFlag &= 0xFFBFFFFD;
+        offset->InstAddr = offset->ActHeaderp + 1;
+        
+        if (hitParam != NULL) {
+            hitParam->HitSE.l = 0;
+            hitParam->DownX = -1;
+            hitParam->DownY = -1;
+            hitParam->DownGrav = -1;
+            hitParam->DownUkemiTime = -1;
+            hitParam->DamageHosei = -1;
+            hitParam->DownFlag = 0;
+            hitParam->FaintPoint = 0x10;
+            hitParam->Kezuri = 0x10;
+            offset->HitParam->GuardSE.l = 0;
+            offset->HitParam->DamInt = NULL;
+            SetDefaultHitVoice(offset);
+        }
+        
+        offset->trans = 0xFF;
+        offset->trans2 = 0xFF;
+        offset->transmode = 0;
+        offset->transmode2 = 0;
+        
+        if (!(offset->InstSt & 0x4000)) {
+            offset->scale = -1;
+            offset->scaleY = -1;
+        }
+        
+        offset->Mark = 0;
+        offset->ActHitCount = 0;
+        offset->PaletteFlag = 0;
+        offset->MaxHitCount = 0x20;
+        offset->InstSt = 0x102;
+        SetDefaultTension(offset);
+        ExCollisionClear(offset);
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", SetAnimeNoLoop);
 
