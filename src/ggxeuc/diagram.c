@@ -39,9 +39,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/diagram", PasswordDecode);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/diagram", CheckPassword);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/diagram", IsLimitPassword);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/diagram", D_005BC8F0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/diagram", D_005BC900);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/diagram", D_005BC918);

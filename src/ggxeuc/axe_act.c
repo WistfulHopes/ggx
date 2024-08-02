@@ -1,7 +1,5 @@
 #include "common.h"
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/axe_act", D_005C9090);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/axe_act", SetAXChainSpeed);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/axe_act", AXCHAct_1);

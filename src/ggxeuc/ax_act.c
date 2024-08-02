@@ -127,7 +127,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/ax_act", AXAct_SHW2);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ax_act", AXAct_SHW2_Jump);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ax_act", AXAct_SHW2_Land);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ax_act", D_005C9058);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ax_act", D_005C9060);

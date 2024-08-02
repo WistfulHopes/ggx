@@ -94,10 +94,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/fa_act", FAActSHWCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fa_act", FAAct_SHW1_1);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fa_act", D_005C92A0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fa_act", D_005C92A8);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fa_act", FAAct_SHW1_2);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fa_act", MakeNega);
@@ -181,5 +177,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/fa_act", FAAct_HW9Sippai);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fa_act", FANG_ColliCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fa_act", FANGAct_Def);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fa_act", D_005C92E0);

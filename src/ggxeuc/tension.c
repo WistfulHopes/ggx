@@ -30,20 +30,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/tension", Tension_Dec);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/tension", SetDefaultTension);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/tension", D_005C0710);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/tension", D_005C0718);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/tension", D_005C0720);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/tension", D_005C0728);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/tension", D_005C0730);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/tension", D_005C0738);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/tension", TensionExecute);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/tension", TensionAddExecute);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/tension", D_005C0758);

@@ -107,15 +107,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/ve_act", VEAct_SHW2_SKYSHOTLand);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ve_act", VEAct_DA1);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ve_act", VEAct_Throw);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ve_act", D_005C9620);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ve_act", D_005C9628);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ve_act", D_005C9648);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ve_act", D_005C9668);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ve_act", D_005C9688);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ve_act", D_005C96A8);

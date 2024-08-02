@@ -66,7 +66,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/jme_act", JMSSDraw);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jme_act", JMSSAct);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jme_act", JMKRAct_0D);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/jme_act", D_005C9360);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/jme_act", D_005C9368);

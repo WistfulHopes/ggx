@@ -26,16 +26,15 @@ ELF_PATH = f"build/{BASENAME}"
 MAP_PATH = f"build/{BASENAME}.map"
 PRE_ELF_PATH = f"build/{BASENAME}.elf"
 
-COMMON_INCLUDES = "-Iinclude -Isrc -isystem include/sdk/ee -isystem include/sdk -isystem include/gcc -isystem include/gcc/gcc-lib"
-COMPILER_DIR = f"{TOOLS_DIR}/cc/ee-gcc2.96/bin"
+COMMON_INCLUDES = "-Iinclude -isystem include/sdk/ee -isystem include/gcc"
 
-COMPILER_FLAGS     = "-O2 -G8 -gstabs"
+GAME_CC_DIR = f"{TOOLS_DIR}/cc/ee-gcc2.9-991111-01/"
+COMMON_COMPILE_FLAGS = "-O2 -G0 $g"
 
-COMPILE_CMD = (
-    f"{COMPILER_DIR}/ee-gcc -c {COMMON_INCLUDES} {COMPILER_FLAGS}"
-)
+GAME_GCC_CMD = f"{GAME_CC_DIR}/bin/ee-gcc -c -B {GAME_CC_DIR}/bin/ee- {COMMON_INCLUDES} {COMMON_COMPILE_FLAGS} $in"
 
-WIBO_VER = "0.6.11"
+GAME_COMPILE_CMD = f"{GAME_GCC_CMD} -S -o - | {TOOLS_DIR}/masps2.py | {GAME_CC_DIR}/ee/bin/as {COMMON_COMPILE_FLAGS} -EL -mabi=eabi"
+
 
 # CALCULATE PROGRESS TODO:
 # python3 -m mapfile_parser progress build/SCPS_150.17.map asm asm/nonmatchings/
@@ -55,17 +54,108 @@ def clean():
     shutil.rmtree("build", ignore_errors=True)
 
 
+# Possibly the worst thing I have ever written... removing the %gp_rel accesses like this...
+# For some reason, the regex doesn't work here, and I'm sure it'll be easier to match these than
+# debug what's going on here.
+GP_HACK_FILENAME_TABLE = [
+    "chk_kakusicmd.s",
+    "WipeParaInDisp.s", "WipeParaInDispMove.s", "WipeParaOutDisp.s",
+    "TsMENU_GetMapTimeState.s", "TsSetScene_Map.s", "TsMenu_Init.s", "TsRanking_Set.s", "MpCityHall_Flow.s", "TsOption_Flow.s"
+]
+
+
+GP_HACK_REPLACE_TABLE  = {
+    # main/drawctrl.c
+    "chk_kakusicmd.s":               [(62,  f'/* B0AC 0010A0AC B48580AF */  sw         $0, D_005CC6A4($28)'),
+                                     (232, f'/* 16ABC 00115ABC 5C8B80AF */  sw         $0, dr_tap_req_num')],
+
+    # main/wipe.c
+    "WipeParaInDisp.s":             [(171, f'/* 1F13C 0011E13C AC8682AF */  sw         $2, wipe_end_flag'),
+                                     (175, f'/* 1F148 0011E148 AC8682AF */  sw         $2, wipe_end_flag')],
+    "WipeParaInDispMove.s":         [(121, f'/* 1F32C 0011E32C AC8682AF */  sw         $2, wipe_end_flag'),
+                                     (125, f'/* 1F338 0011E338 AC8682AF */  sw         $2, wipe_end_flag')],
+    "WipeParaOutDisp.s":            [(113, f'/* 1F504 0011E504 AC8682AF */   sw        $2, wipe_end_flag')],
+
+    # menu/menusub.c
+    "TsMENU_GetMapTimeState.s": [], # 13, 16, 20, 22, 25, 26, 30, 34, 77, 103
+    "TsSetScene_Map.s": [], # 4
+    "TsMenu_Init.s": [], # 4, 101, 114, 134, 143, 159, 171, 198, 200, 201, 202, 203, 205
+    "TsRanking_Set.s": [], # 14, 35, 50
+    "MpCityHall_Flow.s": [], # 19, 37, 53, 54, 55, 57, 58, 95, 96, 99, 103, 105, 142, 
+                             # 159, 164, 165, 182, 185, 194, 198, 205, 246, 255, 258, 268, 272, 274,
+                             # 276, 277, 287, 293, 296, 299, 456, 460, 483, 545, 550, 572, 580, 587,
+                             # 591, 596, 615, 621, 637, 658, 662, 673, 675, 679, 681, 693, 698, 699,
+                             # 703, 705, 707, 741, 743, 759, 760, 780, 813, 815, 821, 843, 845, 854,
+                             # 856, 860, 862, 870, 873, 877, 879, 883, 888, 897, 904, 915, 920, 921,
+                             # 925, 929, 931, 932, 937, 939, 945, 971, 991, 1002, 1009, 1011, 1016,
+                             # 1022, 1028, 1041, 1045, 1060, 1062, 1066, 1074, 1075, 1077, 1080
+    "TsOption_Flow.s": [] # 17, 28, 29, 30, 32, 253, 301, 302, 303, 304
+
+}
+
+
+def gp_hack(filepath):
+    filename = os.path.basename(filepath)
+    if filename in GP_HACK_FILENAME_TABLE:
+        replacements = GP_HACK_REPLACE_TABLE.get(filename, [])
+
+        print(f"(HACK) Removing %gp_rel references on problematic file \"{filename}\"")
+
+        with open(filepath, "r") as file:
+            lines = file.readlines()
+
+        for line_number, new_line in replacements:
+            if 0 <= line_number < len(lines):
+                lines[line_number] = new_line + "\n"
+        
+        with open(filepath, "w") as file:
+            file.writelines(lines)
+
+
+gp_access_pattern = re.compile(r'%(gp_rel)\(([^)]+)\)\(\$28\)') # Pattern for removing %gp_rel accesses
+gp_add_pattern = re.compile(r'addiu\s+(\$\d+), \$28, %gp_rel\(([^)]+)\)') # Pattern for replacing %gp_rel additions
+def remove_gprel():
+    for root, dirs, files in os.walk("asm/nonmatchings/"):
+        for filename in files:
+            filepath = os.path.join(root, filename)
+
+            gp_hack(filepath) # Hopefully I can get rid of this!
+
+            with open(filepath, "r") as file:
+                content = file.read()
+
+            # Search for any %gp_rel access
+            # INSTR REG, %gp_rel(SYMBOL)($28) -> INSTR REG, SYMBOL
+            if re.search(gp_access_pattern, content):
+                # Reference found, remove
+                updated_content = re.sub(gp_access_pattern, r'\2', content)
+
+                # Write the updated content back to the file
+                with open(filepath, "w") as file:
+                    file.write(updated_content)
+            
+            # Search for any %gp_rel additions
+            # addiu REG, $28, %gp_rel(SYMBOL) -> la REG, SYMBOL
+            if re.search(gp_add_pattern, content):
+                # Reference found, replace
+                updated_content = re.sub(gp_add_pattern, r'la \1, \2', content)
+
+                # Write the updated content back to the file
+                with open(filepath, "w") as file:
+                    file.write(updated_content)
+
+
 def write_permuter_settings():
     with open("permuter_settings.toml", "w") as f:
         f.write(
-            f"""compiler_command = "tools/cc/ee-gcc2.96/bin/ee-gcc -c -Iinclude -Iinclude/sdk/ee -Iinclude/gcc -Iinclude/gcc/gcc-lib -O2 -G8 -gstabs -D__GNUC__"
+            f"""compiler_command = "{GAME_COMPILE_CMD} -D__GNUC__"
 assembler_command = "mips-linux-gnu-as -march=r5900 -mabi=eabi -Iinclude"
 compiler_type = "gcc"
 
 [preserve_macros]
 
 [decompme.compilers]
-"tools/cc/ee-gcc2.96/bin/ee-gcc" = "ee-gcc2.9-991111-01"
+"tools/build/cc/gcc/gcc" = "ee-gcc2.96"
 """
         )
 
@@ -111,7 +201,7 @@ def build_stuff(linker_entries: List[LinkerEntry]):
     ninja.rule(
         "cc",
         description="cc $in",
-        command=f"{COMPILE_CMD} $in -o $out && {cross}strip $out -N dummy-symbol-name",
+        command=f"{GAME_COMPILE_CMD} -o $out && {cross}strip $out -N dummy-symbol-name",
     )
 
     ninja.rule(
@@ -191,6 +281,12 @@ if __name__ == "__main__":
         help="Clean the 'src' folder",
         action="store_true",
     )
+    parser.add_argument(
+        "-nogp",
+        "--no-gprel-removing",
+        help="Do not remove gp_rel references on the disassembly",
+        action="store_true",
+    )
     args = parser.parse_args()
 
     if args.clean:
@@ -206,6 +302,10 @@ if __name__ == "__main__":
     build_stuff(linker_entries)
 
     write_permuter_settings()
+
+    # We're done with everything, now get rid of the %gp_rel references
+    if not args.no_gprel_removing:
+        remove_gprel()
 
     if not os.path.isfile("compile_commands.json"):
         exec_shell(["ninja", "-t", "compdb"], open("compile_commands.json", "w"))

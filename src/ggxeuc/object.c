@@ -1,6 +1,6 @@
 #include "common.h"
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/object", D_005C0890);
+#include "ggxeuc/objwork.h"
+#include "ggxeuc/effect.h"
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/object", ExcuteActJumpTbByIdno);
 
@@ -29,5 +29,3 @@ CHARACTER_WORK* ObjectCreate_ActNo(CHARACTER_WORK* poffset, u16 idno, CREATE_ARG
 }
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/object", object_killall);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/object", D_005C0B98);

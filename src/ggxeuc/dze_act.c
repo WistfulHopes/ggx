@@ -16,8 +16,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/dze_act", DZBT_ColliCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/dze_act", SetBitAlive);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C9190);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/dze_act", DZBTSetActNext);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/dze_act", DZBTAct_Create);
@@ -115,30 +113,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/dze_act", DZBTAct_SHW1_Casket);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/dze_act", DZBTAct_SHW1_HomingLaser);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/dze_act", DZBTAct_TENCHI_MCExplosion);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C91D8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C91E0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C91E8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C91F0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C91F8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C9200);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C9208);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C9210);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C9218);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C9220);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C9228);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/dze_act", D_005C9230);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/dze_act", DZBTAct_TENCHI_LBoyShoot);
 

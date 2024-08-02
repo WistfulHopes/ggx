@@ -38,17 +38,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/bgsub", PoBarExe);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bgsub", PoEyeExe);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bgsub", Gray_Exe);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bgsub", D_005BF960);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bgsub", acttb.29);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bgsub", fmstb.30);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bgsub", acttb.39);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bgsub", closeacttb.40);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bgsub", acttb1.44);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bgsub", acttb.45);

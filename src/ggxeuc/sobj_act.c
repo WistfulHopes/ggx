@@ -26,8 +26,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/sobj_act", SDZObj_Coming);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/sobj_act", SDZObj_Run);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/sobj_act", D_005C0E70);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/sobj_act", SDZObj_Standing);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/sobj_act", SDZObj_Sit);
@@ -117,12 +115,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/sobj_act", SAXObj_Sitdown);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/sobj_act", SAXObj_Walk);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/sobj_act", SAXObj_Trun);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/sobj_act", D_005C0EA0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/sobj_act", D_005C0EB8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/sobj_act", D_005C0ED8);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/sobj_act", SAXObj_Rain);
 

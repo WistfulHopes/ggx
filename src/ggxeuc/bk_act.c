@@ -93,7 +93,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/bk_act", BKAct_ITIGEKI);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bk_act", BKAct_ITIGEKI_MISS);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bk_act", BKAct_Throw);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bk_act", D_005C90B8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bk_act", D_005C90C0);

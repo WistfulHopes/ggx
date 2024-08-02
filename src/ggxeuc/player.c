@@ -6,8 +6,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/player", HitDisp);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/player", PlayerActionBreak);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/player", D_005BC638);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/player", PlayerMain);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/player", PlayerMove);
@@ -31,5 +29,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/player", PlayerParaInit);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/player", ioexe_play);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/player", ioexe_deku);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/player", D_005BC720);

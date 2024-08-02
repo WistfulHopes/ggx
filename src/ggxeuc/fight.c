@@ -121,12 +121,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", IsRoundEnd);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", BeforeFight_Init);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BC938);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", rocktb);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", duel1_8);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", BeforeFight_Heaven);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", BeforeFight_Black);
@@ -155,34 +149,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", ReplaySave);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", Accumrater);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", perfecttb);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", drawtb);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", destroytb);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", maydstroy);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF538);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF540);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF548);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF550);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF558);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF568);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF578);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF588);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF590);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF598);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", ScoreMain);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", DrawDispMain);
@@ -200,16 +166,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", DestroyMayMain);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", TimeOverMain);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", IntIrqMain);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF5D0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF5D8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF5E0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF5E8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF5F0);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", EnterFight_Main);
 
@@ -232,5 +188,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", SetUVZ);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", RefereeExe);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fight", EnterFight_Clear);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fight", D_005BF6B0);

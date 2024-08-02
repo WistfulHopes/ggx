@@ -83,5 +83,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/survival", sv_save_result);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/survival", sv_IntIrqMain);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/survival", SvBossInit);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/survival", SV_ADD_DAMAGE);

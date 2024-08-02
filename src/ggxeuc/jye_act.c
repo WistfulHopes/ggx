@@ -34,14 +34,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/jye_act", JYEFAct_Iai2);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jye_act", JYEFAct_Iai3);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/jye_act", D_005C93E8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/jye_act", D_005C93F0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/jye_act", D_005C9400);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/jye_act", D_005C9410);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jye_act", JYEFBARDraw);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jye_act", JYEFAct_Bar);

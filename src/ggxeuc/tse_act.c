@@ -16,10 +16,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/tse_act", TSPH_Act3);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/tse_act", TSKR_IsChase);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/tse_act", D_005C95A8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/tse_act", D_005C95B0);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/tse_act", TSKR_Act_Norm);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/tse_act", TSKR_Act_Chase);

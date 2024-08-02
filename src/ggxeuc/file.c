@@ -25,5 +25,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/file", FileReadCheck);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/file", FileIRXLoad);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/file", FileReadSelect);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/file", D_005B93AD);

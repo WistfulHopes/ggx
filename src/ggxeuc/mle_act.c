@@ -91,15 +91,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/mle_act", MLRSAct_1);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/mle_act", MLRSAct_2);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/mle_act", MLRSAct_3);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/mle_act", D_005C9450);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/mle_act", D_005C9458);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/mle_act", D_005C9460);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/mle_act", speedtb.60);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/mle_act", D_005C94B0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/mle_act", D_005C94C0);

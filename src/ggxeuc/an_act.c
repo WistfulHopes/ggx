@@ -149,7 +149,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/an_act", ANAct_HW8Xc_Hold);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/an_act", ANAct_HW8Xc_Vart);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/an_act", ANAct_HW8Xc_Land);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/an_act", D_005C8FF0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/an_act", D_005C8FF8);

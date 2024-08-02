@@ -26,8 +26,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/plcolchk", SetGuardParam);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/plcolchk", SetHitParam);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/plcolchk", D_005C0848);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/plcolchk", SetHitStop);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/plcolchk", CounterCheck);
@@ -47,7 +45,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/plcolchk", SetDownPower);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/plcolchk", PlayerColliCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/plcolchk", CmnGuardAct);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/plcolchk", D_005C0860);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/plcolchk", D_005C0888);

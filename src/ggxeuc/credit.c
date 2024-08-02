@@ -48,15 +48,3 @@ void CreditClr(void) {
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/credit", Cr_IsCreditEnough);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/credit", Cr_GetCrditCnt);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/credit", valtb.9);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/credit", timetb.10);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/credit", D_005BC850);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/credit", D_005BC868);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/credit", D_005BC870);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/credit", D_005BC878);

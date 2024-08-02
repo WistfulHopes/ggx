@@ -55,5 +55,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/js_act", JSAct_ITIGEKI);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/js_act", JSAct_ITIGEKI2);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/js_act", JSAct_ITIGEKI_Back);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/js_act", D_005C9898);

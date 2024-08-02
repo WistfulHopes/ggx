@@ -10,12 +10,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/poly_eff", InitHibanaVertex);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/poly_eff", PolySkyDashEffectDraw);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/poly_eff", D_005C0D20);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/poly_eff", D_005C0D28);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/poly_eff", D_005C0D30);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/poly_eff", PolyEffInit);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/poly_eff", CircleDraw);
@@ -77,5 +71,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/poly_eff", KakuseiEffectDraw2);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/poly_eff", KakuseiEffectDraw3);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/poly_eff", KakuseiEffectDraw4);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/poly_eff", D_005C0D48);

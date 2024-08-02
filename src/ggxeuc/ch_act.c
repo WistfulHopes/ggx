@@ -172,8 +172,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/ch_act", CHAct_DA1);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ch_act", CHHWXCommandCheck);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ch_act", D_005C90F0);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ch_act", CHHWXEndCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ch_act", CHAct_HW1X_AB);

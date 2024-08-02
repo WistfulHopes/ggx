@@ -1,7 +1,5 @@
 #include "common.h"
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/vsctrl", D_005BF6B8);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/vsctrl", Enter_Stage_Bg);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/vsctrl", VsCpuCtrl);
@@ -64,5 +62,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/vsctrl", SetCancelFlag);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/vsctrl", GetLimitStatus);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/vsctrl", SetLimitStatus);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/vsctrl", D_005BF6E8);

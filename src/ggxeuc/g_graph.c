@@ -23,15 +23,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/g_graph", DrawParent);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/g_graph", GraphicExecuteRoot);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/g_graph", G_GraphicInit);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_graph", D_005C0E00);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_graph", D_005C0E08);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_graph", D_005C0E10);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_graph", D_005C0E18);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_graph", D_005C0E20);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_graph", D_005C0E28);

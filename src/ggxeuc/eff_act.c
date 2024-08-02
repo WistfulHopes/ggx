@@ -6,8 +6,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/eff_act", CMNEFFActWithJumpDef);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/eff_act", CMNEFFActWithRandPos);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/eff_act", D_005C0CE0);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/eff_act", H20_20_Act);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/eff_act", PLYEFF01Act);
@@ -77,5 +75,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/eff_act", IsKunsyouHit);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/eff_act", Kunsyou_Level0);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/eff_act", Score_Level0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/eff_act", D_005C0D18);

@@ -27,5 +27,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/fade", SetFadeEndCommand);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fade", SetFadeCockpitFlag);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fade", GetFadeCockpitFlag);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fade", D_005BB998);

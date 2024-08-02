@@ -1,13 +1,5 @@
 #include "common.h"
 
-INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", func_0013AE78);
-
-INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", ProfileEnd);
-
-INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", ProfileMain);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actchk", D_005C0230);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", UkemiCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", HomingJumpCancelCheck);
@@ -54,12 +46,8 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", SpecialAttackCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", NoCancelAttackCheck);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actchk", D_005C0258);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", GuardSpecialAttackCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", CmnGuardSpecialAttackCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actchk", ROMANCHANSELCheck);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actchk", D_005C0300);

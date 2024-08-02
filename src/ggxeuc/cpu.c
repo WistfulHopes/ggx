@@ -41,30 +41,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/cpu", SetCPUFunc);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cpu", GetCPUprobability);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0530);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0538);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0540);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0548);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0550);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0558);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0560);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0568);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0570);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0578);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0580);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C0588);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cpu", CPUTHINKTBExecute);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cpu", CPUGuardCheck);
@@ -81,19 +57,9 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/cpu", CPUEM_Hit);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cpu", CPUEM_Attack);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C05D8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C05E0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C05E8);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cpu", CPUMain);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cpu", CPUExecute);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C06A0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cpu", D_005C06B0);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cpu", CPUInit);
 

@@ -13,8 +13,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/throw", GetCommandThrowEnableFlag);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/throw", PlayerThrowFlagSet);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/throw", D_005C0770);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/throw", IsCommandThrow);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/throw", PlayerCommandThrowFlagSet);
@@ -154,11 +152,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/throw", CmnAct_Casket);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/throw", CmnAct_DieByTS);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/throw", CmnAct_Die2ByTS);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/throw", D_005C07B0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/throw", D_005C07D8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/throw", D_005C0818);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/throw", D_005C0820);

@@ -4,8 +4,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/jy_act", JY_SpecialAttackCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jy_act", JY_ExciteCommnadCheck);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/jy_act", D_005C9370);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jy_act", JY_RespectCommnadCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jy_act", JYSP2ExCommandCheck2);
@@ -138,5 +136,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/jy_act", JYAct_HW7_4a);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jy_act", JYAct_HW7_3b);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/jy_act", JYAct_HW7_4b);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/jy_act", D_005C9398);

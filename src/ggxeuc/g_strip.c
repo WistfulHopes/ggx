@@ -71,11 +71,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/g_strip", gStripGetFadeColor);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/g_strip", JY_CradDraw);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/g_strip", StripDebug);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_strip", D_005BB8F8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_strip", D_005BB900);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_strip", D_005BB908);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/g_strip", D_005BB910);

@@ -1,4 +1,6 @@
 #include "common.h"
+#include "ggxeuc/act.h"
+#include "ggxeuc/objwork.h"
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", af_ASTFLAGCONTROL);
 
@@ -8,7 +10,7 @@ void af_BACK_MOTION(CHARACTER_WORK* offset, TACTNORMAL* ip) {
     offset->GuardSt &= 0xFBFF;
     offset->ActHeader.flag &= 0xFFFFDFFF;
     offset->attackst = (offset->attackst | 0x800) & 0xFFFFBFFF;
-    if (ip->arg1 == 0) {
+    if (ip->arg1.u == 0) {
         offset->attackst = ((offset->attackst & 0xFFFFFFEF) | 0x400) & 0xFFFFFFDF;
     }
 }
@@ -58,19 +60,19 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", af_SETDOWNFLAG);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", af_SIT);
 
 void af_AFTERIMAGE(CHARACTER_WORK *offset,TACTNORMAL *ip) {
-    if (ip->arg2 == 0)
+    if (ip->arg2.u == 0)
     {       
-        if (ip->arg1 != 0) {
+        if (ip->arg1.u != 0) {
             offset->ply->pactst |= 2;
             return;
         }
         offset->ply->pactst &= 0xfffd;
         return;
     }
-    if (ip->arg2 != 0) {
-        if (ip->arg2 == 1)
+    if (ip->arg2.u != 0) {
+        if (ip->arg2.u == 1)
         {       
-            if (ip->arg1 != 0) {
+            if (ip->arg1.u != 0) {
                 offset->ply->pactst |= 0x2000;
                 return;
             }

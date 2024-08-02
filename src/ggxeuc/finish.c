@@ -32,22 +32,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/finish", KakuseiBG_Execute);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/finish", KakuseiBG_Draw);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/finish", D_005C7320);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/finish", D_005C7328);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/finish", D_005C7330);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/finish", D_005C7338);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/finish", D_005C7340);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/finish", D_005C7348);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/finish", D_005C7350);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/finish", D_005C7358);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/finish", KakuseiFinishInit);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/finish", KakuseiFinishEnd);

@@ -25,7 +25,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/ane_act", ANBFAct_Kakusei3);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ane_act", ANUPAct_UnvisualObject);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ane_act", ANBFAct_WinDef);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ane_act", D_005C9048);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ane_act", D_005C9050);

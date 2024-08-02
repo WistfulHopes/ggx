@@ -1,7 +1,5 @@
 #include "common.h"
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cockpit", D_005C0D88);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cockpit", CockpitLoad);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cockpit", CockpitLoadInit);
@@ -22,15 +20,9 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/cockpit", CockpitDraw1p2p);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cockpit", CockpitExecute);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cockpit", D_005C0DA0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cockpit", D_005C0DB0);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cockpit", CockpitDrawCmn);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cockpit", DrawName);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/cockpit", D_005C0DD0);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/cockpit", DrawDemoPlayandLogo);
 

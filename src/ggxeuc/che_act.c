@@ -14,8 +14,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/che_act", CHBBAct_2);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/che_act", CHBBAct_5);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/che_act", D_005C9120);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/che_act", CHITAct_7);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/che_act", CHITAct_8);
@@ -39,5 +37,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/che_act", CHKHAct_1);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/che_act", CHTUAct_1);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/che_act", CHTUAct_2);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/che_act", D_005C9188);

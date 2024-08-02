@@ -92,10 +92,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/my_act", MYAct_Hissatu3_2);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/my_act", MYAct_Hissatu3_3);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/my_act", D_005C94D0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/my_act", speedtb.128);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/my_act", MYHissatu3LevelDraw);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/my_act", MYAct_Hissatu3x_1);

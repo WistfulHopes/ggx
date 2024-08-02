@@ -85,5 +85,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/ts_act", TSAct_HW1c);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ts_act", TSAct_Stand2);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/ts_act", TSAct_SHW_1);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/ts_act", D_005C9558);

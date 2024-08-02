@@ -4,8 +4,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/fae_act", func_001885E8);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fae_act", FANGAct_Choco);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/fae_act", D_005C9320);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fae_act", Print_Build);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/fae_act", FANGAct_Build);

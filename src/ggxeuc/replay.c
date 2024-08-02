@@ -30,28 +30,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", replay_chk_connect);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", replay_chk_connect_all);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFA10);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFA18);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFA30);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFA48);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFA60);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFA78);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFA90);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFAA8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFAC0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFAD8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFAF0);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", replay_mode_disp);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", replay_fade_bg);
@@ -70,23 +48,11 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", set_replay_sound);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", get_replay_sound);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFB18);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFB28);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFB40);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", replay_datasave);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", replay_select_savechk);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", disp_save_selectfile);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFC08);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFC18);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFC28);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", replay_save_operate);
 
@@ -111,7 +77,5 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", rep_select_mode);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", rep_id_get);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", ReplayInit);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/replay", D_005BFCB8);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/replay", ReplayMain);

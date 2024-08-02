@@ -13,5 +13,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/text", TextPutS);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/text", TextPutD);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/text", TextPutX);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/text", D_005B9368);

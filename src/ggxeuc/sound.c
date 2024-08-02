@@ -75,8 +75,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/sound", ggx_bgm_start);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/sound", VoiceFree);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/sound", D_005C9980);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/sound", BGM_Free);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/sound", set_soundmode);

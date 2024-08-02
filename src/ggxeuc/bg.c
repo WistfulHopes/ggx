@@ -36,8 +36,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/bg", BG_Execute);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bg", GetBGFade);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bg", D_005BF828);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bg", BGObjCreate);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bg", BG_LoadTextureInit);
@@ -51,10 +49,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/bg", BG_LoadTextureExecute);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bg", BG_LoadTexture);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bg", ForeStellBG);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bg", D_005BF8D8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/bg", D_005BF900);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/bg", BG_Init);
 

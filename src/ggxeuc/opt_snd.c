@@ -33,25 +33,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/opt_snd", stst_font_se);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/opt_snd", disp_usage);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/opt_snd", soundtest_init);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3E70);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3E78);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3E88);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3E98);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3EA8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3EC0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3ED0);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3EE8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3EF8);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3F10);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/opt_snd", D_005C3F20);

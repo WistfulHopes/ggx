@@ -34,12 +34,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/actsub", SetHitBackXSpeed);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actsub", SetADHitBackXSpeed);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actsub", D_005C0380);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actsub", D_005C0388);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actsub", D_005C0390);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actsub", SetDashXSpeed);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actsub", JumpControl);
@@ -153,11 +147,3 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/actsub", SetDefaultHitVoice);
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actsub", SetDamage);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actsub", RenewalCollision);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actsub", D_005C0488);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actsub", D_005C0490);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actsub", D_005C0498);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/actsub", D_005C04A0);

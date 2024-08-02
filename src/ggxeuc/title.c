@@ -6,8 +6,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/title", DispDiagram);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/title", RankBGDrawSub);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/title", D_005BAAB8);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/title", RankDrawSub);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/title", RankDraw);
@@ -30,10 +28,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/title", TitleLoad);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/title", TitleClose);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/title", D_005BAB18);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/title", D_005BABC8);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/title", ModeSelect);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/title", SkipTitle);
@@ -42,5 +36,3 @@ void KariEndInit(void) {
 }
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/title", TitleMain);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/title", D_005BAC60);

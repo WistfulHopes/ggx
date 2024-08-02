@@ -18,10 +18,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/system", smalloc);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/system", dmalloc);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/system", D_005C9D18);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/system", D_005C9D38);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/system", mmalloc);
 
 void dfree(void) {

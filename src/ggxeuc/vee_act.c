@@ -4,8 +4,6 @@ INCLUDE_ASM("asm/nonmatchings/ggxeuc/vee_act", VEBL_ColliCheck);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/vee_act", SetVallSpeed);
 
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/vee_act", D_005C96D0);
-
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/vee_act", SetItigekiVallSpeed);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/vee_act", VEBLSetPosition);
@@ -73,13 +71,3 @@ void VEBB_ColliCheck(void) {
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/vee_act", VEBBAct_0);
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/vee_act", VEBBAct_1);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/vee_act", D_005C9700);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/vee_act", D_005C9708);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/vee_act", D_005C9710);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/vee_act", D_005C9718);
-
-INCLUDE_RODATA("asm/nonmatchings/ggxeuc/vee_act", D_005C9720);
