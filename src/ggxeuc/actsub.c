@@ -1,4 +1,5 @@
 #include "common.h"
+#include "ggxeuc/actsub.h"
 
 INCLUDE_ASM("asm/nonmatchings/ggxeuc/actsub", SetActNo);
 

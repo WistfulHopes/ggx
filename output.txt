@@ -1,0 +1,6 @@
+[1/1] sha1sum checksum.sha1
+FAILED: build/SLPM_645.25.ok 
+sha1sum -c checksum.sha1 && touch build/SLPM_645.25.ok
+build/SLPM_645.25: FAILED
+sha1sum: WARNING: 1 computed checksum did NOT match
+ninja: build stopped: subcommand failed.

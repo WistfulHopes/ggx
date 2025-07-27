@@ -1,0 +1,6 @@
+platform: ps2
+tools:
+  decompme:
+    contextPath: src/ggxeuc/act.c
+    compiler: ee-gcc2.9-991111-01
+    preset: null

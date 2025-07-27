@@ -2,10 +2,23 @@
 #include "ggxeuc/act.h"
 #include "ggxeuc/objwork.h"
 
-INCLUDE_ASM("asm/nonmatchings/ggxeuc/act", af_ASTFLAGCONTROL);
+void af_ASTFLAGCONTROL(CHARACTER_WORK* offset, TACTNORMAL* ip) {
+    s32 flag;
+
+    if (ip->arg1.u == 0) {
+        flag = 0x100000;
+    } else {
+        flag = ((ip->arg1.u ^ 1) != 0) ? 0 : 0x01000000;
+    }
+    if ((s16) ip->arg2.u != 0) {
+        offset->actst = offset->actst | flag;
+        return;
+    }
+    offset->actst = offset->actst & ~flag;
+}
 
 void af_BACK_MOTION(CHARACTER_WORK* offset, TACTNORMAL* ip) {
-    u32 temp_t2 = (offset->attackst | 0x800) & 0xFFFFBFFF;
+    u32 temp_attackst = (offset->attackst | 0x800) & 0xFFFFBFFF;
     offset->actst |= 0x40;
     offset->GuardSt &= 0xFBFF;
     offset->ActHeader.flag &= 0xFFFFDFFF;
