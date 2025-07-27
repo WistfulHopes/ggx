@@ -19,6 +19,8 @@ options:
     compiler: EEGCC
     platform: ps2
 
+    use_gp_rel_macro_nonmatching: False # Disable %gp_rel emission
+    make_full_disasm_for_code: True
     ld_bss_contains_common: True
     
     string_encoding: EUC-JP
@@ -26,8 +28,7 @@ options:
     disasm_unknown: True
     named_regs_for_c_funcs: False
     gp_value: 0x5d40f0
-    # subalign: 4
-    include_macro_inc: no # don't write macro.inc to rodata files
+    subalign: null
     
     find_file_boundaries: False
     section_order: [".text", ".data", ".rodata", ".lit4", ".sdata", ".sbss", ".bss"]
